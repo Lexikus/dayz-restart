@@ -21,8 +21,8 @@ fn main() {
 
     let parameter = restart::Parameter {
         // TODO: make this fields environment variables
-        message: "restart from github action machine due to configuration changes".to_string(),
-        restart_message: "Serverkonfigurationen wurden geändert. Server wird neugestartet.".to_string()
+        message: "restart from ci/cd due to configuration changes".to_string(),
+        restart_message: "server configuration have been changed. server will be restarted".to_string()
     };
 
     let client = reqwest::blocking::Client::new()
